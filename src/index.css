@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-headline: 'Space Grotesk', sans-serif;
+
+  --color-bg-base: #071426;
+  --color-bg-dark: #0B1F3A;
+  --color-bg-container: #142032;
+  --color-bg-high: #1e2a3d;
+  --color-bg-low: #0f1c2e;
+  --color-bg-lowest: #030e20;
+  --color-accent-cyan: #38BDF8;
+  --color-bright-blue: #0EA5E9;
+  --color-brand-blue: #2563EB;
+  --color-text-main: #F8FAFC;
+  --color-text-muted: #94A3B8;
+}
+
+/* Custom scrollbars and styling */
+html {
+  scroll-behavior: smooth;
+  background-color: #071426;
+  color: #F8FAFC;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #071426;
+}
+
+/* Typography helper classes matching Stitch */
+h1, h2, h3, .font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Subtle blueprint dot grid pattern matching Stitch */
+.blueprint-grid {
+  background-image: radial-gradient(#38bdf8 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.blueprint-grid-dense {
+  background-image: radial-gradient(#38bdf8 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* Brutalist sharp button & box shadows */
+.shadow-brutal-cyan {
+  box-shadow: 4px 4px 0px 0px #38BDF8;
+}
+
+.shadow-brutal-blue {
+  box-shadow: 4px 4px 0px 0px #2563EB;
+}
+
+.shadow-brutal-dark {
+  box-shadow: 6px 6px 0px 0px #030e20;
+}
