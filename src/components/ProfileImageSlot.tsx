@@ -72,7 +72,7 @@ export default function ProfileImageSlot({ className = '', compact = false }: Pr
           <img
             src={activeSrc}
             alt="T Sai Shiva Kumar"
-            className={`w-full h-full object-cover object-center transition-opacity duration-300 ${
+            className={`w-full h-full object-cover object-top transition-opacity duration-300 ${
               imageLoaded ? 'opacity-100' : 'opacity-0 absolute'
             }`}
             onLoad={() => {
